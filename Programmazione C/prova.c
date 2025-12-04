@@ -2,7 +2,7 @@
 
 int main(){
 
-    printf("Ciao Repository aggioranto!\n");
+    printf("Ciao Repository Nuovo!\n");
 
     return 0;
 }
