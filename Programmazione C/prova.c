@@ -13,11 +13,10 @@ void funzioneListaPari(FILE *fInput){
     printf("Numeri pari presenti nel file di input:\n");
     while(fscanf(fInput, "%d", &numero) == 1){
         if(numero % 2 == 0){
-            printf("%d\n", numero);
+            printf("%d ", numero);
         }
     }
 }
-
 
 
 int main(){
@@ -43,9 +42,6 @@ funzioneListaPari(fInput);
 
 //Chiusura del file di input
 fclose(fInput);
-
-
-
 
     return 0;
 }
