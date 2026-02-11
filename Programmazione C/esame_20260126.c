@@ -10,10 +10,6 @@ typedef struct{
     int Qd;
 } Codice;
 
-//in questo eserczio si usano gli array
-
-
-
  //funzioni Prototipo
 
     //Quesito 1
