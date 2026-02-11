@@ -23,7 +23,7 @@ typedef struct{
         *cb = malloc(cap*sizeof(Codice));
 
         int q1,q2;
-        while (fscaf(f, "%d %d", &q1, &q2) == 2){
+        while (fscanf(f, "%d %d", &q1, &q2) == 2){
             if (n == cap){
                 cap *= 2;
                 *cb = realloc(*cb, cap*sizeof(Codice));
@@ -113,7 +113,7 @@ typedef struct{
 
         while (fscanf(f, "%lf %lf %lf", &t0, &t1, &t2) == 3){
             int Q1,Q2,Qd;
-            calcola_quanti(t0,t1,t2,Tq,&Q1,&Q2,Qd);
+            calcola_quanti(t0,t1,t2,&Q1,&Q2,&Qd,Tq);
             int idx = trova_codice(cb, n, Q1, Q2, Qd);  
             printf("%d\n", idx);
         }
